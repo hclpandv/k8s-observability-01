@@ -1,4 +1,6 @@
   loki:
+    commonConfig:
+      replication_factor: 1
     schemaConfig:
       configs:
         - from: "2024-04-01"
@@ -34,4 +36,4 @@
 
   gateway:
     service:
-      type: NodePort
+      type: LoadBalancer
